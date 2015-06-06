@@ -155,7 +155,7 @@ vi statd.js
 Then start up StatsD:
 
 ```sh
-sudo statsd statd.js
+sudo statsd statd.js 2&>1 >>statsd.log &
 ```
 
 You can use netcat to write some test data to StatsD:
