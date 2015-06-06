@@ -121,7 +121,7 @@ see the values in percent you should use the aggregation function
 
 # Connecting up StatsD
 
-Install the EPEL release RPMS, install NodeJS, NPM and then [StatsD][statds]
+Install the EPEL release RPMS, install NodeJS, NPM and then [StatsD][statsd]
 and the InfluxDB backend for StatsD:
 
 ```sh
