@@ -1,7 +1,7 @@
 # Installing InfluxDB and Grafana
 
 Install InfluxDB and Grafana, you can find the URL for the latest RPMs from
-the InfluxDB and Grafana websites:
+the [InfluxDB][influxdb] and [Grafana][grafana] websites:
 
 ```sh
 sudo yum -y install $url_to_influxdb.rpm
@@ -35,7 +35,7 @@ database.
 
 # Connecting up CollectD
 
-First install CollectD:
+First install [CollectD][collectd]:
 
 ```sh
 sudo yum -y install collectd
@@ -121,8 +121,8 @@ see the values in percent you should use the aggregation function
 
 # Connecting up StatsD
 
-Install the EPEL release RPMS, install NodeJS, NPM and then StatsD and
-the InfluxDB backend for StatsD:
+Install the EPEL release RPMS, install NodeJS, NPM and then [StatsD][statds]
+and the InfluxDB backend for StatsD:
 
 ```sh
 sudo yum -y install epel-release
@@ -167,3 +167,8 @@ echo "user_registration:1|c" | nc -u -w10 127.0.0.1 8125
 
 You should be able to see this new series in InfluxDB and set up a
 new graph to plot these values.
+
+[influxdb]: http://influxdb.com/
+[grafana]: http://grafana.org/
+[collectd]: https://collectd.org/
+[statsd]: https://github.com/etsy/statsd
