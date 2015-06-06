@@ -45,7 +45,7 @@ Then edit the configuration for both InfluxDB and CollectD. For the InfluxDB
 configuration we want to update the CollectD input plugin, enabling it and
 specifying the port to listen on, the database to send to and the types:
 
-{{/opt/influxdb/share/config.toml}}:
+`/opt/influxdb/share/config.toml`:
 
 ```
 # Configure the collectd api
@@ -68,7 +68,7 @@ sudo vim /etc/collectd.conf
 Uncomment the network plugin and update the network plugins settings to
 point to the InfluxDB CollectD API.
 
-{{/etc/collectd.conf}}:
+`/etc/collectd.conf`:
 
 ```
 <Plugin network>
