@@ -1,7 +1,7 @@
 # Installing InfluxDB and Grafana
 
-Install InfluxDB and Grafana, you can find the URL for the latest
-RPMs from the InfluxDB and Grafana websites:
+Install InfluxDB and Grafana, you can find the URL for the latest RPMs from
+the InfluxDB and Grafana websites:
 
 ```sh
 sudo yum -y install $url_to_influxdb.rpm
@@ -14,7 +14,7 @@ Check that your max file descriptors is sensible:
 sysctl fs.file-max
 ```
 
-Should be > 10k. If not increase it by...
+Should be > 10k. If not increase it by editing `/etc/sysctl.conf`.
 
 ```sh
 sudo systemctl enable influxdb
@@ -30,8 +30,8 @@ sudo systemctl start grafana-server
 
 Check that Grafana is running by browsing to port 3000.
 
-Set up a database in InfluxDB and a data source in Grafana to
-point to that database. 
+Set up a database in InfluxDB and a data source in Grafana to point to that
+database. 
 
 # Connecting up CollectD
 
