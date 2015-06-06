@@ -47,7 +47,7 @@ specifying the port to listen on, the database to send to and the types:
 
 `/opt/influxdb/share/config.toml`:
 
-```
+```ini
 # Configure the collectd api
 [input_plugins.collectd]
 enabled = true
@@ -70,7 +70,7 @@ point to the InfluxDB CollectD API.
 
 `/etc/collectd.conf`:
 
-```
+```aconf
 <Plugin network>
 #       # client setup:
         Server "127.0.0.1" "25826"
